@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="script/script.js"></script>
+    <title>Portfolio - Claire Maitre</title>
+    <link rel="icon" type="image/png" href="public/logo/logo.png">
+</head>
+
+<!-- Important: There are a lot of tags with the attribute "lang = 'something'", I will not comment each and every one of these but those are variations depending on the language chosen by the user on the website. Thank you for reading this!-->
+
+<body>
+    <!-- header and nav bar -->
+    <header class="header__main">
+        <section class="header__section">
+            <h6>Nav Bar</h6>
+            <nav class="header__nav">
+                <figure class="header__figure">
+                    <a href="#home"><img src="public/logo/logo.png" alt="logo"></a>
+                </figure>
+                    <ul class="header__ul">
+                        <li lang="fr"><a href="#apropos">À propos </a></li>
+                        <li lang="fr"><a href="#skill">Compétences</a></li>
+                        <li lang="fr"><a href="#projets">Mes Projets</a></li>
+
+                        <li lang="en"><a href="#apropos">About Me </a></li>
+                        <li lang="en"><a href="#skill">Skills</a></li>
+                        <li lang="en"><a href="#projets2">My Projects</a></li>
+                    </ul>
+
+                <div class="header__group">
+                    <div class="language_group">
+                        <!-- Usage of a JavaScript function to hide or show all english or french elements -->
+                        <button  class="header__language" onclick="languageswitch()">
+                            <img id="button_img" src="public/Skills/twemoji--flag-france.svg" alt="Language">
+                        </button>
+                        <img id="alt-flag" src="public/Skills/twemoji--flag-united-states.svg" alt="alternative_flag">
+                    </div>
+                    <a href="#form" class="contact_button">Contact</a>
+                </div>    
+            </nav>
+        </section>
+    </header>
+
+    <!-- start of main part of the website -->
+    <main>
+        <!-- video and buttons about me -->
+         <!-- Anchor link -->
+        <section id="home" class="main__accueil">
+            <video id ="cheat" src="public/video/loop.mp4" autoplay loop muted></video>
+            <div class="presentation">
+                <h2 lang="fr">Étudiante MMI</h2>
+
+                <h2 lang="en">MMI Student</h2>
+                <h1><strong>Claire MAITRE</strong></h1>
+                <div class="buttons_placement">
+                    <a lang="fr" href="public/CV/CV_Maitre_Claire.pdf" target="_blank" class="other_button">Mon CV</a>
+
+                    <a lang="en" href="public/CV/CV_Maitre_Claire.pdf" target="_blank" class="other_button">Resume</a>
+                    <a href="#form" class="other_button">Contact</a>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- secret to find on -->
+        <section id="cheat_on">
+            <h2>Not display</h2>
+            <img src="public/placeholder/mizuki.gif" alt="mizuki">
+        </section>
+
+        <!-- Separator used multiple times in the document, will comment only one of those  -->
+         <!-- Anchor link -->
+        <div id="apropos" class="styled_hr_container">
+            <div class="styled_hr"></div>
+        </div>
+
+        <!-- Presentation of myself and my skills and flaws -->
+        <section class="main__propos">
+            <h2 lang="fr">À PROPOS</h2>
+
+            <h2 lang="en">ABOUT ME</h2>
+                <div class="myself_container">
+                    <figure>
+                        <img src="public/Skills/I.png" alt="Myself (Claire Maitre)">
+                    </figure>
+                    <div class="myself_paragraph">
+                        <p lang="fr">Je suis en première année de MMI (Métier du multimédia et de l'internet), je suis passionnée par l'informatique et plus précisémement le développement web et le graphisme. J'aime toujours me donner des défis afin de m'améliorer et de donner le meilleur de moi même en permanence.
+                        </p>
+                        <p lang="fr">
+                        Avant d'arriver en MMI, j'ai fais un Bac Français International au lycée Saint-Cricq et je me suis dirigée en MMI afin de tout ce qui touche au multimédia et internet pour mieux me diriger après.
+                        </p>
+
+                        <p lang="en">I'm in the first year of the MMI program, I adore computing and more precisely Web Development and Graphics. I love giving myself challenges with the goal to get better and always give the best of myself in all situations.
+                        </p>
+                        <p lang="en"> Before entering the MMI, I was in an BFI section at Saint-Cricq High School. Afterwards I went to the MMI to be able to try everything related to the Internet to know better where I want to lean at the end of it.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Anchor link -->
+            <div id="skill" class="styled_hr_container">
+                <div class="styled_hr"></div>
+            </div>
+
+            <!-- Skills division -->
+            <div class="main__skill">
+                <div class="container_q">
+
+                    <div class="container_quality">
+                        <h3 lang="fr"><strong>Curieuse</strong></h3>
+                        <p lang="fr">J'aime toujours pousser mes limites actuelles pour toujours apprendre plus de choses et m'améliorer dans les domaines que j'aime.</p>
+
+                        <h3 lang="en"><strong>Curious</strong></h3>
+                        <p lang="en">I love always pushing my current limits to always learn more and become better in the realm that I like.</p>
+                    </div>
+
+                    <div class="container_quality">
+                        <h3 lang="fr"><strong>Déterminée</strong></h3>
+                        <p lang="fr">Je donne toujours le meilleur de moi même pour avoir le meilleur résultat dans mes projets.</p>
+
+                        <h3 lang="en"><strong>Determined</strong></h3>
+                        <p lang="en">I always give the best of myself to obtain the perfect result to my eyes in projects.</p>
+                    </div>
+
+                    <div class="container_quality">
+                        <h3 lang="fr"><strong>Coopération</strong></h3>
+                        <p lang="fr">Le travail en équipe est une partie importante pour moi, je ne laisse pas les autres derrière pour qu'on arrive à notre objectif commun.</p>
+
+                        <h3 lang="en"><strong>Teamwork</strong></h3>
+                        <p lang="en">Teamwork is a mandatory part for me, I don't let others fall behind so we can all arrive to our common goals.</p>
+
+                    </div>
+                </div>
+
+                <h2 lang="fr">COMPÉTENCES</h2>
+
+                <h2 lang="en">SKILLS</h2>
+                <div class="container_f">
+                    <div class="container_flaw">
+                        <h3 lang="fr"><strong>Lente</strong></h3>
+                        <p lang="fr">Je suis lente dans mes travaux et quelque chose qui serait rapide pour d'autre ne l'est pas avec moi mais je travaile dessus pour être plus rapide !</p>
+
+                        <h3 lang="en"><strong>Slow</strong></h3>
+                        <p lang="en">I'm quite slow while working and something that would be quick for others isn't necessarily the case for me however I'm working on it to become faster in those tasks! </p>
+                    </div>
+                </div>
+
+                <div class="styled_hr_container">
+                    <div class="smaller_styled_hr"></div>
+                </div>
+
+                <!-- table without border to show my skills -->
+                <div class="main__table">
+                    <table lang="fr">
+                        <tr>
+                            <th colspan="5">Compétences Acquises</th>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><img src="public/Skills/skill_usa.svg" alt="US"></td>
+                            <td><img src="public/Skills/skill_france.svg" alt="France"></td>
+                            <td><img src="public/Skills/material-icon-theme--python.svg" alt="Python"></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th colspan="5">Compétences en Apprentissage</th>
+                        </tr>
+                        <!-- Anchor link -->
+                        <tr id="projets">
+                            <td><img src="public/Skills/C_Programming_Language.svg" alt="C"></td>
+                            <td><img src="public/Skills/vscode-icons--file-type-html.svg" alt="HTML5"></td>
+                            <td><img src="public/Skills/devicon--css3.svg" alt="CSS3"></td>
+                            <td><img src="public/Skills/skill-icons--php-dark.svg" alt="PHP"></td>
+                            <td><img src="public/Skills/vscode-icons--file-type-js-official.svg" alt="JSS"></td>
+                        </tr>
+
+                    </table>
+
+                </div>
+
+                    <div class="main__table">
+                        <table lang="en">
+                            <tr>
+                                <th colspan="5">Acquired Skills</th>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><img src="public/Skills/skill_usa.svg" alt="US"></td>
+                                <td><img src="public/Skills/skill_france.svg" alt="France"></td>
+                                <td><img src="public/Skills/material-icon-theme--python.svg" alt="Python"></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th colspan="5">Currently learning</th>
+                            </tr>
+                            <!-- Anchor link -->
+                            <tr id="projets2">
+                                <td><img src="public/Skills/C_Programming_Language.svg" alt="C"></td>
+                                <td><img src="public/Skills/vscode-icons--file-type-html.svg" alt="HTML5"></td>
+                                <td><img src="public/Skills/devicon--css3.svg" alt="CSS3"></td>
+                                <td><img src="public/Skills/skill-icons--php-dark.svg" alt="PHP"></td>
+                                <td><img src="public/Skills/vscode-icons--file-type-js-official.svg" alt="JSS"></td>
+                            </tr>
+
+                        </table>
+                    </div>
+
+            </div>
+
+            <div class="styled_hr_container">
+                <div class="styled_hr"></div>
+            </div>
+
+        </section>
+
+        <!-- Section on my projects done in the MMI or by myself -->
+        <section class="main__project">
+
+            <div class="main__elements">
+                <ul>
+                    <!-- Call of a JavaScript function to either display or block some elements. -->
+                    <li lang="fr"><button onclick="element_remover1()" class="button_style">MMI</button></li>
+                    <li lang="fr"><button onclick="element_remover2()" class="button_style">Professionnel</button></li>
+                    <li lang="fr"><button onclick="element_remover3()" class="button_style">Personnel</button></li>
+
+                    <li lang="en"><button onclick="element_remover1()" class="button_style">MMI</button></li>
+                    <li lang="en"><button onclick="element_remover2()" class="button_style">Professional</button></li>
+                    <li lang="en"><button onclick="element_remover3()" class="button_style">Personal</button></li>
+                </ul>
+            </div>
+
+            <div id="ele1_container">
+                <p lang="fr" class="text_thesis">Ceci est une liste des projets que j'ai fais en SAÉ à l'IUT de Tarbes depuis Septembre 2025:</p>
+                <h2 lang="fr">MES PROJETS</h2>
+
+                <p lang="en" class="text_thesis">This is a list of projects that I have done in groups at the university ever since September 2025:</p>
+                <h2 lang="en">MY PROJECTS</h2>
+
+                <div class="card_ele1_container">
+
+                    <!-- Repetition of the same <a> tag for each card that are in a flexbox -->
+
+                    <a href="https://scratch.mit.edu/projects/1221222429" target="_blank">
+                        <div class="single_card_container">
+                            <figure>
+                                <img src="public/projets/jeu.png" alt="Image SAE 105">
+                            </figure>
+                            <div class="styled_hr_container">
+                                <div class="card_styled_hr"></div>
+                            </div>
+                            <h3 lang="fr">SAÉ 105 (Septembre 2025)</h3>
+                            <h3 lang="en">SAÉ 105 (September 2025)</h3>
+                            <p lang="fr">Jeu de labyrinthe en No-Code sur le logiciel Scratch</p>
+
+                            <p lang="en">Maze game in No-Code on programming language Scratch</p>
+                        </div>
+                    </a>
+
+                    <a href="public/projets/SAE101.pdf" target="_blank">
+                        <div class="single_card_container">
+                            <figure>
+                                <img src="public/projets/audit.png" alt="Image SAE 101">
+                            </figure>
+                            <div class="styled_hr_container">
+                                <div class="card_styled_hr"></div>
+                            </div>
+                            <h3 lang="fr">SAÉ 101 (Octobre 2025)</h3>
+                            <h3 lang="en">SAÉ 101 (October 2025)</h3>
+                            <p lang="fr">Audit de communication sur la controverse de l'autouroute A69</p>
+
+                            <p lang="en">Communication audit on the A69 Highway controversy</p>
+                        </div>
+                    </a>
+
+                    <a href="public/projets/SAE102.pdf" target="_blank">
+                        <div class="single_card_container">
+                            <figure>
+                                <img src="public/projets/debat.png" alt="Image SAE 102">
+                            </figure>
+                            <div class="styled_hr_container">
+                                <div class="card_styled_hr"></div>
+                            </div>
+                            <h3 lang="fr">SAÉ 102 (Novembre 2025)</h3>
+                            <h3 lang="en">SAÉ 102 (November 2025)</h3>
+                            <p lang="fr">Analyse de communication entre deux partis sur le cas A69</p>
+
+                            <p lang="en">Communication analysis between two sides about the A69 case</p>
+                        </div>
+                    </a>
+
+                    <a href="https://drive.google.com/file/d/1VimrrC1VySbkr-Oa8P1XQrm7BAECmenN/view?usp=drive_link" target="_blank">
+                        <div class="single_card_container">
+                            <figure>
+                                <img src="public/projets/logo.png" alt="Image SAE 106">
+                            </figure>
+                            <div class="styled_hr_container">
+                                <div class="card_styled_hr"></div>
+                            </div>
+                            <h3 lang="fr">SAÉ 106 (Novembre 2025)</h3>
+                            <h3 lang="en">SAÉ 106 (November 2025)</h3>
+                            <p lang="fr">Site internet sur un parc touristique fictif - Refuge de Noël</p>
+
+                            <p lang="en">Website on a fictional tourist park called the "Refuge de Noël" </p>
+                        </div>
+                    </a>
+
+                    <a href="https://drive.google.com/file/d/18Lt1ujCKo-Zn_tfScKaCLXfkDPzWy5wW/view?usp=drive_link" target="_blank">
+                        <div class="single_card_container">
+                            <figure>
+                                <img src="public/projets/PF.png" alt="Image SAE 104">
+                            </figure>
+                            <div class="styled_hr_container">
+                                <div class="card_styled_hr"></div>
+                            </div>
+                            <h3 lang="fr">SAÉ 104 (Décembre 2025)</h3>
+                            <h3 lang="en">SAÉ 104 (December 2025)</h3>
+                            <p lang="fr">Pocket Film sur le thème "Jour de chance"</p>
+
+                            <p lang="en">Pocket Film produced on the theme "Lucky Day"</p>
+                        </div>
+                    </a>
+
+                    <a href="public/projets/sae103.png" target="_blank">
+                        <div class="single_card_container">
+                            <figure>
+                                <img src="public/projets/idea.png" alt="Image SAE 104">
+                            </figure>
+                            <div class="styled_hr_container">
+                                <div class="card_styled_hr"></div>
+                            </div>
+                            <h3 lang="fr">SAÉ 103 (Janvier 2026)</h3>
+                            <h3 lang="en">SAÉ 103 (January 2026)</h3>
+                            <p lang="fr">Utilisation de la risographie pour faire une carte de voeux</p>
+
+                            <p lang="en">Learning of Risopgraph to create a wish card</p>
+                        </div>
+                    </a>
+
+
+                </div>
+            </div>
+
+            <div id="ele2_container">
+                <p lang="fr" class="text_thesis">Ceci est une liste des projets que j'ai fais à un niveau professionnel:</p>
+                <h2 lang="fr">MES PROJETS</h2>
+
+                <p lang="en" class="text_thesis">Personal projects that I am working on or have worked on:</p>
+                <h2 lang="en">MY PROJECTS</h2>
+
+                <div class="container_empty">
+                    <h3 lang="fr">Aucun élément présent actuellement</h3>
+
+                    <h3 lang="en">No elements currently present</h3>
+                    <img src="public/placeholder/BlahajNoBG.gif" alt="Empty">
+                </div>
+            </div>
+
+            <div id="ele3_container">
+                <p lang="fr" class="text_thesis">Ceci est une liste des projets personnel que je travaille ou que je travaillais:</p>
+                <h2 lang="fr">MES PROJETS</h2>
+
+                <p lang="en" class="text_thesis">This is a list of personal projects that I work or have worked:</p>
+                <h2 lang="en">MY PROJECTS</h2>
+
+                <div class="card_ele3_container">
+                    
+                    <a href="https://rwfc.net/team" target="_blank">
+                        <div class="single_card_container">
+                            <figure>
+                                <img src="public/projets/RR.png" alt="Retro Rewind Logo">
+                            </figure>
+                            <div class="styled_hr_container">
+                                <div class="card_styled_hr"></div>
+                            </div>
+                            <h3 lang="fr">Retro Rewind (Août 2024)</h3>
+                            <h3 lang="en">Retro Rewind (August 2024)</h3>
+                            <p lang="fr">Développeuse et cheffe du projet de Traduction sur le mod Retro Rewind</p>
+
+                            <p lang="en">Developer and leader of a translation project on the mod Retro Rewind</p>
+                        </div>
+                    </a>
+
+                    <a href="https://thunderstore.io/c/zelda-64-recompiled/p/Eppe/" target="_blank">
+                        <div class="single_card_container">
+                            <figure>
+                                <img src="public/projets/MM3D.png" alt="Majora's Mask">
+                            </figure>
+                            <div class="styled_hr_container">
+                                <div class="card_styled_hr"></div>
+                            </div>
+                            <h3 lang="fr">Modding MM (Août 2025)</h3>
+                            <h3 lang="en">MM Modding (August 2025)</h3>
+
+                            <p lang="fr">Apprentisage du C pour faire du modding</p>
+                            <p lang="en">Learning of C language to make mods</p>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+
+        </section>
+
+        <div class="styled_hr_container">
+            <div class="styled_hr"></div>
+        </div>
+
+        <!-- Form with no method since it doesn't do anything after sending it (were not asked to do such a thing) -->
+        <section id="form" class="main__form">
+            <h2>CONTACT</h2>
+            <div class="form_container">
+                <form action="index.html">
+                    <div class="form_information">
+                        <label for="name"></label>
+                        <input type="text" placeholder="Full Name" name="name" id="name" required>
+
+                        <label for="email"></label>
+                        <input type="text" placeholder="E-Mail" name="email" id="email" required>
+                    </div>
+
+                    <textarea name="message" id="message" required></textarea>
+
+                    <input lang="fr" type="submit" value="Envoyer">
+
+                    <input lang="en" type="submit" value="Send">
+
+                </form>
+            </div>
+        </section>
+
+        <div class="styled_hr_container">
+            <div class="styled_hr"></div>
+        </div>
+
+    </main>
+
+    <!-- Start of the footer -->
+    <footer>
+        <section id="footer" class="footer__container">
+
+            <div class="footer_legal_mention">
+
+                <div class="footer__person_info">
+                    <p>@Claire Maitre - 2025</p>
+                    <p>blahaj.maitre@gmail.com</p>
+                </div>
+
+                <p class="dot">|</p>
+
+                <!-- Anchor used to darken the screen upon clicking on the <a> tag and it's position -->
+                <div class="footer__lm">
+                    <a lang="fr" href="#footer__modal_window">
+                    Mentions Legales
+                    </a>
+
+                    <a lang="en" href="#footer__modal_window">
+                    Legal Mentions
+                    </a>
+                </div>
+            </div>
+
+            <!-- Validator badges: Warning, while there is an official badge for the CSS check hower there are some for some prior to HTML5 but not HTML5 specifically so I just put the logo and a link towards the W3C check. -->
+            <p>
+                <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                    <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" />
+                </a>
+
+                <a href="https://validator.w3.org/nu/">
+                    <img src="https://www.w3.org/html/logo/downloads/HTML5_Logo_32.png" alt="Valid HTML5" />
+                </a>
+            </p>
+                
+
+            <div class="footer__social">
+                <a href="https://github.com/Eppeu" target="_blank">
+                    <img src="public/icons/cib--github.svg" alt="github">
+                </a>
+                <a href="https://linkedin.com/in/claire-maitre-3420a9366" target="_blank">
+                    <img src="public/icons/cib--linkedin.svg" alt="linkedin">
+                </a>
+            </div>
+            
+            <!-- Recreation of a modal window in HTML and CSS (forgot about the fact that there is a modal pseudo class) -->
+            <div id="footer__modal_window">
+                <div class="modal_window">
+                    <h3 lang="fr">MENTIONS LÉGALES</h3>
+                    <p lang="fr">
+                    Conformément aux dispositions de la loi n° 2004-575 du 21 juin 2004 pour la confiance en l'économie numérique, il est précisé aux utilisateurs du site Portfolio - Claire Maitre l'identité des différents intervenants dans le cadre de sa réalisation et de son suivi.
+                    </p>
+                    <h3 lang="fr">Edition du site </h3>
+                    <p lang="fr">
+                        Le présent site, accessible à l’URL www.portfolio_cm.com (le « Site »), est édité par :
+                        Claire Maitre, résidant 39 Migu Blahaj 84590 France , de nationalité Française (France), née le 13/04/2007.
+                    </p>
+                    <h3 lang="fr">Hébergement</h3>
+                    <p lang="fr">
+                        Le Site est hébergé par la société Local, situé 39 Migu Blahaj 84590 France , (contact téléphonique ou email : +33620483298).
+                    </p>
+                    <h3 lang="fr">Directeur de publication </h3>
+                    <p lang="fr">
+                        Le Directeur de la publication du Site est Claire Maitre.
+                        Nous contacter 
+                        Par téléphone : +33620483298
+                        Par email : blahaj.maitre@gmail.com
+                        Par courrier : 39 Migu Blahaj 84590 France 
+                        Génération des mentions légales par Legalstart.
+                    </p>
+
+                    <h3 lang="en">LEGAL MENTIONS</h3>
+                    <p lang="en">
+                    In accordance with the provisions of law n°2004-575 of the 21st of June 2004 about the economical digital trust, users are informed of of the website Portfolio - Claire Maitre the identity of the following people in the creation and its a follow-up.  
+                    </p>
+                    <h3 lang="en">Edit of the website</h3>
+                    <p lang="en">
+                        The current website, accesible from the url www.portfolio_cm.com, was edited by:
+                        Claire Maitre, resided at 39 Migu Blahaj 84590 France, with the French nationality, born on 04/13/2007
+                    </p>
+                    <h3 lang="en">Hosting</h3>
+                    <p lang="en">
+                        The website is hosted by the local company, resided at 39 Migu Blahaj 84590 France, (phone contact or email
+                        +33620483298):
+
+                    </p>
+                    <h3 lang="en">Director in publication</h3>
+                    <p lang="en">
+                        The director in publication of the website is Claire Maitre.
+                        To contact us
+                        Phone : +33620483298
+                        Email : blahaj.maitre@gmail.com
+                        Letter : 39 Migu Blahaj 84590 France 
+                        Generation of the legal mentions by Legalstart.
+                    </p>
+                    <!-- Return to the bottom of the page using an anchor -->
+                    <a class="other_button" href="#footer">Fermer</a>
+                </div>
+            </div>
+
+        </section>
+    </footer>
+</body>
+</html>
