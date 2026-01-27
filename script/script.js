@@ -57,12 +57,12 @@ const allowedKeys = {
   Enter: 'enter'
 };
 
-let konamiCode = ['up', 'up', 'down', 'down', 'left', 'right', 'left', 'right', 'b', 'a', 'enter'];
-let konamiCodePosition = 0;
+var konamiCode = ['up', 'up', 'down', 'down', 'left', 'right', 'left', 'right', 'b', 'a', 'enter'];
+var konamiCodePosition = 0;
 
 document.addEventListener('keydown', function(e) {
-  let key = allowedKeys[e.key];
-  let requiredKey = konamiCode[konamiCodePosition];
+  var key = allowedKeys[e.key];
+  var requiredKey = konamiCode[konamiCodePosition];
   if (key == requiredKey) {
     konamiCodePosition++;
     if (konamiCodePosition == konamiCode.length) {
@@ -227,3 +227,4 @@ BUT MMI S1 - Intégration S1`,
 "color: #D3CCD1; font-weight: bold; font-family: sans-serif;"
 
 );
+
