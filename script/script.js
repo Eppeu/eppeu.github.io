@@ -1,9 +1,9 @@
 
 // Section for each type of projects
 function element_remover1() {
-  let ele1 = document.getElementById("ele1_container");
-  let ele2 = document.getElementById("ele2_container");
-  let ele3 = document.getElementById("ele3_container");
+  var ele1 = document.getElementById("ele1_container");
+  var ele2 = document.getElementById("ele2_container");
+  var ele3 = document.getElementById("ele3_container");
   if (ele1.style.display === "none") {
     ele1.style.display = "block";
     ele2.style.display = "none";
@@ -16,9 +16,9 @@ function element_remover1() {
 }
 
 function element_remover2() {
-  let ele1 = document.getElementById("ele1_container");
-  let ele2 = document.getElementById("ele2_container");
-  let ele3 = document.getElementById("ele3_container");
+  var ele1 = document.getElementById("ele1_container");
+  var ele2 = document.getElementById("ele2_container");
+  var ele3 = document.getElementById("ele3_container");
   if (ele2.style.display === "none" && ele1.style.display === "block" || ele3.style.display === "block" ) {
     ele2.style.display = "block";
     ele1.style.display = "none";
@@ -31,9 +31,9 @@ function element_remover2() {
 }
 
 function element_remover3() {
-  let ele1 = document.getElementById("ele1_container");
-  let ele2 = document.getElementById("ele2_container");
-  let ele3 = document.getElementById("ele3_container");
+  var ele1 = document.getElementById("ele1_container");
+  var ele2 = document.getElementById("ele2_container");
+  var ele3 = document.getElementById("ele3_container");
   if (ele3.style.display === "none" && ele1.style.display === "block" || ele2.style.display === "block" ) {
     ele3.style.display = "block";
     ele2.style.display = "none";
@@ -227,4 +227,5 @@ BUT MMI S1 - Intégration S1`,
 "color: #D3CCD1; font-weight: bold; font-family: sans-serif;"
 
 );
+
 
