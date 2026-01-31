@@ -95,7 +95,7 @@
 
                         <p lang="en">I'm in the first year of the MMI program, I adore computing and more precisely Web Development and Graphics. I love giving myself challenges with the goal to get better and always give the best of myself in all situations.
                         </p>
-                        <p lang="en"> Before entering the MMI, I was in an BFI section at Saint-Cricq High School. Afterwards I went to the MMI to be able to try everything related to the Internet to know better where I want to lean at the end of it.
+                        <p lang="en"> Before entering the MMI, I was in a BFI section at Saint-Cricq High School. Afterwards I went to the MMI to be able to try everything related to the Internet to know better where I want to lean at the end of it.
                         </p>
                     </div>
                 </div>
@@ -107,14 +107,20 @@
 
             <!-- Skills division -->
             <div class="main__skill">
+
+                <h2 class = "skills1" lang="fr">COMPÉTENCES</h2>
+
+                <h2 class = "skills1" lang="en">SKILLS</h2>
+
+
                 <div class="container_q">
 
                     <div class="container_quality">
                         <h3 lang="fr"><strong>Curieuse</strong></h3>
-                        <p lang="fr">J'aime toujours pousser mes limites actuelles pour toujours apprendre plus de choses et m'améliorer dans les domaines que j'aime.</p>
+                        <p lang="fr">J'aime toujours pousser mes limites actuelles pour toujours apprendre plus de choses et m'améliorer</p>
 
                         <h3 lang="en"><strong>Curious</strong></h3>
-                        <p lang="en">I love always pushing my current limits to always learn more and become better in the realm that I like.</p>
+                        <p lang="en">I love always pushing my current limits to always learn more to be better.</p>
                     </div>
 
                     <div class="container_quality">
@@ -127,7 +133,7 @@
 
                     <div class="container_quality">
                         <h3 lang="fr"><strong>Coopération</strong></h3>
-                        <p lang="fr">Le travail en équipe est une partie importante pour moi, je ne laisse pas les autres derrière pour qu'on arrive à notre objectif commun.</p>
+                        <p lang="fr">Le travail en équipe est une partie importante pour moi, je ne laisse pas les autres derrière dans les projets.</p>
 
                         <h3 lang="en"><strong>Teamwork</strong></h3>
                         <p lang="en">Teamwork is a mandatory part for me, I don't let others fall behind so we can all arrive to our common goals.</p>
@@ -135,15 +141,15 @@
                     </div>
                 </div>
 
-                <h2 lang="fr">COMPÉTENCES</h2>
+                <h2 class = "skills2" lang="fr">COMPÉTENCES</h2>
 
-                <h2 lang="en">SKILLS</h2>
+                <h2 class = "skills2" lang="en">SKILLS</h2>
                 <div class="container_f">
                     <div class="container_flaw">
-                        <h3 lang="fr"><strong>Lente</strong></h3>
+                        <h3 lang="fr"><strong>Précautionneuse</strong></h3>
                         <p lang="fr">Je suis lente dans mes travaux et quelque chose qui serait rapide pour d'autre ne l'est pas avec moi mais je travaile dessus pour être plus rapide !</p>
 
-                        <h3 lang="en"><strong>Slow</strong></h3>
+                        <h3 lang="en"><strong>Cautious</strong></h3>
                         <p lang="en">I'm quite slow while working and something that would be quick for others isn't necessarily the case for me however I'm working on it to become faster in those tasks! </p>
                     </div>
                 </div>
@@ -166,7 +172,7 @@
                             <td></td>
                         </tr>
                         <tr>
-                            <th colspan="5">Compétences en Apprentissage</th>
+                            <th colspan="5">Compétences en apprentissage</th>
                         </tr>
                         <!-- Anchor link -->
                         <tr id="projets">
@@ -218,26 +224,28 @@
 
         <!-- Section on my projects done in the MMI or by myself -->
         <section class="main__project">
+            <h2 class="project1" lang="fr">MES PROJETS</h2>
+            <h2 class="project2" lang="en">MY PROJECTS</h2>
 
             <div class="main__elements">
                 <ul>
                     <!-- Call of a JavaScript function to either display or block some elements. -->
-                    <li lang="fr"><button onclick="element_remover1()" class="button_style">MMI</button></li>
-                    <li lang="fr"><button onclick="element_remover2()" class="button_style">Professionnel</button></li>
-                    <li lang="fr"><button onclick="element_remover3()" class="button_style">Personnel</button></li>
+                    <li lang="fr"><button onclick="element_remover(0)" class="button_style">MMI</button></li>
+                    <li lang="fr"><button onclick="element_remover(1)" class="button_style">Professionnel</button></li>
+                    <li lang="fr"><button onclick="element_remover(2)" class="button_style">Personnel</button></li>
 
-                    <li lang="en"><button onclick="element_remover1()" class="button_style">MMI</button></li>
-                    <li lang="en"><button onclick="element_remover2()" class="button_style">Professional</button></li>
-                    <li lang="en"><button onclick="element_remover3()" class="button_style">Personal</button></li>
+                    <li lang="en"><button onclick="element_remover(0)" class="button_style">MMI</button></li>
+                    <li lang="en"><button onclick="element_remover(1)" class="button_style">Professional</button></li>
+                    <li lang="en"><button onclick="element_remover(2)" class="button_style">Personal</button></li>
                 </ul>
             </div>
 
-            <div id="ele1_container">
+            <div class="projet_container" id="project_alone">
                 <p lang="fr" class="text_thesis">Ceci est une liste des projets que j'ai fais en SAÉ à l'IUT de Tarbes depuis Septembre 2025:</p>
-                <h2 lang="fr">MES PROJETS</h2>
+                <h2 class="project2" lang="fr">MES PROJETS</h2>
 
                 <p lang="en" class="text_thesis">This is a list of projects that I have done in groups at the university ever since September 2025:</p>
-                <h2 lang="en">MY PROJECTS</h2>
+                <h2 class="project2" lang="en">MY PROJECTS</h2>
 
                 <div class="card_ele1_container">
 
@@ -310,7 +318,7 @@
                     <a href="https://drive.google.com/file/d/18Lt1ujCKo-Zn_tfScKaCLXfkDPzWy5wW/view?usp=drive_link" target="_blank">
                         <div class="single_card_container">
                             <figure>
-                                <img src="public/projets/PF.png" alt="Image SAE 104">
+                                <img src="/public/projets/PF.png" alt="Image SAE 104">
                             </figure>
                             <div class="styled_hr_container">
                                 <div class="card_styled_hr"></div>
@@ -343,7 +351,7 @@
                 </div>
             </div>
 
-            <div id="ele2_container">
+            <div class="projet_container">
                 <p lang="fr" class="text_thesis">Ceci est une liste des projets que j'ai fais à un niveau professionnel:</p>
                 <h2 lang="fr">MES PROJETS</h2>
 
@@ -358,7 +366,7 @@
                 </div>
             </div>
 
-            <div id="ele3_container">
+            <div class="projet_container">
                 <p lang="fr" class="text_thesis">Ceci est une liste des projets personnel que je travaille ou que je travaillais:</p>
                 <h2 lang="fr">MES PROJETS</h2>
 
