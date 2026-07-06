@@ -331,7 +331,6 @@ textarea {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    scale: 1.3;
     z-index: 0;
     
 }
@@ -459,6 +458,8 @@ textarea {
     flex-direction: row;
     justify-content: center;
     text-align: center;
+    flex-wrap: wrap;
+    margin: 0px 10px;
     gap: 20px;
 }
 
@@ -469,7 +470,7 @@ textarea {
 }
 /* SAE */
 
-.card_ele1_container,.card_ele2_container,.card_ele3_container{
+.card_ele1_container,.card_ele2_container,.card_ele3_container,.card_ele4_container{
     display: flex;
     gap: 30px;
     justify-content: center;
@@ -727,7 +728,7 @@ body [lang="en"] {
     }
 
     .project2 {
-        display: none;
+        display: block;
     }
 
     h2 {

@@ -8,16 +8,25 @@ function element_remover(index) {
       element[0].style.display = 'block';
       element[1].style.display = 'none';
       element[2].style.display = 'none';
+      element[3].style.display = 'none';
       break;
     case element[1]:
       element[1].style.display = 'block';
       element[2].style.display = 'none';
       element[0].style.display = 'none';
+      element[3].style.display = 'none';
       break;
     case element[2]:
       element[2].style.display = 'block';
       element[0].style.display = 'none';
       element[1].style.display = 'none';
+      element[3].style.display = 'none';
+      break;
+    case element[3]:
+      element[3].style.display = 'block';
+      element[0].style.display = 'none';
+      element[1].style.display = 'none';
+      element[2].style.display = 'none';
       break;
   }
 }
