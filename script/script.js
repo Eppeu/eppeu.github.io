@@ -1,6 +1,23 @@
 
 // Section for each type of projects
 
+function keep_hover_active(index) {  
+  const element = document.querySelectorAll(".button_style");
+  let language_version = document.documentElement.lang;
+  if (language_version === 'en') index += 4;
+  element.forEach((document,index2) => {
+    if (element[index]) {
+      element[index].style.borderBottom= "4px solid var(--Secondary)";
+      element[index].style.borderTop= "none";
+      element[index].style.transition = "ease 0.1s";
+    } 
+    element[index2].style.borderBottom= "";
+    element[index2].style.borderTop= "";
+    element[index2].style.transition = "";
+  });
+
+}
+
 function element_remover(index) {
   const element = document.querySelectorAll('.projet_container');
   switch (element[index]) {
@@ -9,24 +26,28 @@ function element_remover(index) {
       element[1].style.display = 'none';
       element[2].style.display = 'none';
       element[3].style.display = 'none';
+      keep_hover_active(0);
       break;
     case element[1]:
       element[1].style.display = 'block';
       element[2].style.display = 'none';
       element[0].style.display = 'none';
       element[3].style.display = 'none';
+      keep_hover_active(1);
       break;
     case element[2]:
       element[2].style.display = 'block';
       element[0].style.display = 'none';
       element[1].style.display = 'none';
       element[3].style.display = 'none';
+      keep_hover_active(2);
       break;
     case element[3]:
       element[3].style.display = 'block';
       element[0].style.display = 'none';
       element[1].style.display = 'none';
       element[2].style.display = 'none';
+      keep_hover_active(3);
       break;
   }
 }

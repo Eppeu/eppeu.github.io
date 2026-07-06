@@ -184,7 +184,6 @@ td {
     border-bottom: 4px solid var(--Secondary);
     border-top: none;
     transition: 0.1s ease;
-    background: var(--Tertiary);
 }
 
 ul {
