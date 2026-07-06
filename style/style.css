@@ -464,6 +464,7 @@ textarea {
 .text_thesis {
     font-size: 25px;
     padding: 10px;
+    margin: 0px 65px;
 }
 /* SAE */
 
@@ -644,6 +645,10 @@ body [lang="en"] {
   .skills1 {
     display: block;
   }
+
+    .header__nav {
+        width: 700px;
+    }
 }
 
 @media (max-width: 850px) {
@@ -653,6 +658,7 @@ body [lang="en"] {
 
   .header__nav {
     border: unset;
+    width: unset;
     border-top: 5px solid var(--Secondary);
     border-radius: 10px 10px 0 0;
     gap: 30px;

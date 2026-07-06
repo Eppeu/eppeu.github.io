@@ -199,7 +199,7 @@ console.log(`%c    ..-.                                                         
 
 %c
 Portfolio - Claire Maitre
-BUT MMI S1 - Intégration S1`,
+BUT MMI S3`,
 "color: #F5A9B8; font-family: monospace; line-height: 1;",
 "color: #D3CCD1; font-weight: bold; font-family: sans-serif;"
 );
